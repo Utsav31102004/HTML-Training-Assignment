@@ -1,11 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+
+    <nav class="navbar navbar-light bg-white py-3 px-4">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+
+            <div class="d-flex align-items-center gap-3">
+                <img src="./images/menu-bar.svg" alt="menu">
+
+                <img src="./images/logo.svg" width="140" alt="logo">
+
+                <div class="d-flex align-items-center ms-4">
+                    <img src="./images/search-icon.svg" width="20" alt="search">
+                    <span class="ms-2 text-muted">Search</span>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-4">
+                <img src="./images/notification-icon.svg" width="22" alt="notification">
+
+                <div class="d-flex align-items-center gap-2">
+                    <img src="./images/profile.png" width="32" height="32" class="rounded-circle" alt="profile">
+                    <span class="fw-medium">John Doe</span>
+                    <img src="./images/downward-arrow.svg" width="14" alt="arrow">
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div class="d-flex flex-row">
+        <div>
+            <div class="vh-100 p-3" style="width: 260px;  font-family: 'Roboto';">
+
+                <div class="d-flex flex-column gap-3">
+
+                    <div class="d-flex align-items-left gap-3 px-3 py-2 " style="color: #3E3E3E;">
+                        <img src="./images/dashboard-default.svg" width="20" height="20" alt="">
+                        <a href="dashboard.html" class="active text-decoration-none"
+                            style="color: #3E3E3E;"><span>Dashboard</span></a>
+                    </div>
+
+                    <div class="d-flex align-items-left gap-3 px-3 py-2" style="color: #C8242F;">
+                        <img src="./images/graph-active.svg" width="20" height="20" alt="">
+                        <a href="innerpage.html" class="active text-decoration-none active" style="color: #C8242F;">
+                            <span>Analysis</span></a>
+                    </div>
+                    <div class="d-flex align-items-left gap-3 px-3 py-2" style="color: #3E3E3E;">
+                        <img src="./images/inbox-default.svg" width="20" height="20" alt="">
+                        <a href="/error" class="active text-decoration-none" style="color: #3E3E3E;">
+                            <span>Inbox</span></a>
+                    </div>
+                    <div class="d-flex align-items-left gap-3 px-3 py-2" style="color: #3E3E3E;">
+                        <img src="./images/clock-default.svg" width="20" height="20" alt="">
+                        <a href="/error" class="active text-decoration-none" style="color: #3E3E3E;">
+                            <span>History</span></a>
+                    </div>
+
+                    <div class="d-flex align-items-left gap-3 px-3 py-2" style="color: #3E3E3E;">
+                        <img src="./images/user-default.svg" width="20" height="20" alt="">
+                        <a href="/error" class="active text-decoration-none" style="color: #3E3E3E;">
+                            <span>Users</span></a>
+                    </div>
+
+
+                    <div class="d-flex align-items-left gap-3 px-3 py-2" style="color: #3E3E3E;">
+                        <img src="./images/maintenance-default.svg" width="20" height="20" alt="">
+                        <a href="/error" class="active text-decoration-none" style="color: #3E3E3E;">
+                            <span>Maintenance</span></a>
+                    </div>
+
+                    <div class="d-flex align-items-left gap-3 px-3 py-2" style="color: #3E3E3E;">
+                        <img src="./images/search-icon.svg" width="20" height="20" alt="">
+                        <a href="/error" class="active text-decoration-none" style="color: #3E3E3E;">
+                            <span>Setting</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-column gap-4" style="width: 80%;">
+            <div class="dashboard_title">
+                Analysis
+            </div>
+
+            <div class="">
+                <div>
+                    <label for="formGroupExampleInput" class="form-label one_column">One Column</label>
+                    <input type="text" class="form-control m-4" id="formGroupExampleInput"
+                        placeholder="Example input placeholder">
+                </div>
+                <div>
+                    <input type="text" class="form-control m-4" id="formGroupExampleInput2"
+                        placeholder="Another input placeholder">
+                </div>
+                <div class="form-floating m-4 " >
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                </div>
+
+
+                <div class="row g-3 m-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 </body>
+
 </html>
