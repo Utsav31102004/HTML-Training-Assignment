@@ -171,145 +171,130 @@
                     <span>Sales by Country</span>
                     <img src="./images/pie-chart.svg" class="mt-3" alt="">
 
-                    <div class="d-flex flex-row justify-content-evenly">
+                    <div class="d-flex flex-row justify-content-around country_name">
                         <div>
-                            <div>United States of america</div>
-                            <div>Russia</div>
+                            <div class="d-flex flex-row justify-content-start">
+                                <div class="dot red m-2"></div>
+                                <div>United States of america</div>
+                            </div>
+
+                            <div class="d-flex flex-row justify-content-start">
+                                <div class="dot orange m-2" style="color: #F16C20;"></div>
+                                <div>Russia</div>
+                            </div>
                         </div>
 
                         <div>
-                            <div>Canada</div>
-                            <div>456</div>
+                            <div class="d-flex flex-row justify-content-start">
+                                <div class="dot green m-2"></div>
+                                <div>Canada</div>
+                            </div>
+                            <div class="d-flex flex-row justify-content-start">
+                                <div class="dot yellow m-2"></div>
+                                <div>India</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-    </div>
-
-
-
-
-
-    <!-- <text class="yearly">Yearly</text>
-    <text class="line"></text>
-
-    <img class="graph" src="./images/data-graph.png" alt="">
-    </div> -->
-    <!-- <div class="pie_div">
-        <p class="country_text">Sales by Country</p>
-        <img src="./images/pie-chart.svg" class="pie_chart" alt="">
         
-        <span class="point1"></span>
-        <p class="usa">United States of America</p>
-
-
-        <span class="point2"></span>
-        <p class="russia">Russia</p>
-
-        <span class="point3"></span>
-        <p class="canada">Canada</p>
-
-        <span class="point4"></span>
-        <p class="india">India</p>
-    </div> -->
-
-
-    <!-- <div class="invoice_div">
-        <p class="invoice">Invoices</p>
-        <p class="view_all">View All</p>
-
-        <table class="table table-borderless mt-5 invoice_table ">
-            <thead>
-                <tr>
-                    <th class="col-1" style="color: #ADADAD;">INVOICE</th>
-                    <th class="col-2" style="color: #ADADAD;">COMPANY NAME</th>
-                    <th class="col-2" style="color: #ADADAD;">EMAIL</th>
-                    <th class="col-2" style="color: #ADADAD;">DUE DATE</th>
-                    <th class="col-1" style="color: #ADADAD;">Paid</th>
-                    <th scope="col-2" style="color: #ADADAD;">AMOUNT</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>651535</th>
-                    <td>Public Adjusting Firm</td>
-                    <td>georgia.young@example.com</td>
-                    <td>24 May, 2020</td>
-                    <td style="color: #3CDD5F; font-weight: 1000;">Paid</td>
-                    <td>$47,800</td>
-                </tr>
-                <tr>
-                    <th>558612</th>
-                    <td>Other</td>
-                    <td>jessica.hanson@example.com</td>
-                    <td>24 May, 2020</td>
-                    <td style="color: #3CDD5F; font-weight: 1000;">Paid</td>
-                    <td>$98,000</td>
-                </tr>
-                <tr>
-                    <th>558612</th>
-                    <td> alma.lawson@example.com </td>
-                    <td>Doe</td>
-                    <td>8 Sep, 2020</td>
-                    <td style="color: #3CDD5F; font-weight: 1000;">Paid</td>
-                    <td>$20,900</td>
-                </tr>
-                <tr>
-                    <th>558612</th>
-                    <td>Property Management Company</td>
-                    <td> kenzi.lawson@example.com </td>
-                    <td>22 Oct, 2020</td>
-                    <td style="color: #3CDD5F; font-weight: 1000;">Paid</td>
-                    <td>$10,570</td>
-                </tr>
-                <tr>
-                    <th>651535</th>
-                    <td>Subcontractor Company</td>
-                    <td>jackson.graham@example.com </td>
-                    <td>1 Feb, 2020</td>
-                    <td style="color: #FF4545; font-weight: 700;">Failed</td>
-                    <td>$10,200</td>
-                </tr>
-                <tr>
-                    <th>653518</th>
-                    <td>Mortgage Company</td>
-                    <td> felicia.reid@example.com </td>
-                    <td>22 Oct, 2020</td>
-                    <td>Pending</td>
-                    <td>$12,600</td>
-                </tr>
-                <tr>
-                    <th>487441</th>
-                    <td>TPA</td>
-                    <td> dolores.chambers@example.com </td>
-                    <td>21 Sep, 2020</td>
-                    <td style="color: #3CDD5F; font-weight: 1000;">Paid</td>
-                    <td>$11,170</td>
-                </tr>
-                <tr>
-                    <th>267400</th>
-                    <td>Fire Department</td>
-                    <td> navaeh.simmons@example.com </td>
-                    <td>17 Oct, 2020</td>
-                    <td style="color: #FF4545; font-weight: 700;">Failed</td>
-                    <td>$28,000</td>
-                </tr>
-                <tr>
-                    <th>449003</th>
-                    <td>Insurance Carrier</td>
-                    <td> curtis.weaver@example.com </td>
-                    <td>21 Sep, 2020</td>
-                    <td style="color: #3CDD5F; font-weight: 1000;">Paid</td>
-                    <td>$10,000</td>
-                </tr>
-
-            </tbody>
-        </table>
-    </div> -->
-
-
+        <div class="invoice_div">
+            <div class="d-flex flex-row justify-content-between">
+                <span class="invoice">Invoices</span>
+                <span class="view_all">View All</span>
+            </div>
+    
+            <table class="table table-borderless mt-5 invoice_table">
+                <thead>
+                    <tr>
+                        <th class="col-2" style="color: #ADADAD;">INVOICE</th>
+                        <th class="col-2" style="color: #ADADAD;">COMPANY NAME</th>
+                        <th class="col-3" style="color: #ADADAD;">EMAIL</th>
+                        <th class="col-2" style="color: #ADADAD;">DUE DATE</th>
+                        <th class="col-2" style="color: #ADADAD;">Paid</th>
+                        <th scope="col-2" style="color: #ADADAD;">AMOUNT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>651535</th>
+                        <td>Public Adjusting Firm</td>
+                        <td>georgia.young@example.com</td>
+                        <td>24 May, 2020</td>
+                        <td style="color: #3CDD5F; font-weight: 1000;">Paid</td>
+                        <td>$47,800</td>
+                    </tr>
+                    <tr>
+                        <th>558612</th>
+                        <td>Other</td>
+                        <td>jessica.hanson@example.com</td>
+                        <td>24 May, 2020</td>
+                        <td style="color: #3CDD5F; font-weight: 1000;">Paid</td>
+                        <td>$98,000</td>
+                    </tr>
+                    <tr>
+                        <th>558612</th>
+                        <td>Doe </td>
+                        <td>alma.lawson@example.com</td>
+                        <td>8 Sep, 2020</td>
+                        <td style="color: #3CDD5F; font-weight: 1000;">Paid</td>
+                        <td>$20,900</td>
+                    </tr>
+                    <tr>
+                        <th>558612</th>
+                        <td>Property Management Company</td>
+                        <td> kenzi.lawson@example.com </td>
+                        <td>22 Oct, 2020</td>
+                        <td style="color: #3CDD5F; font-weight: 1000;">Paid</td>
+                        <td>$10,570</td>
+                    </tr>
+                    <tr>
+                        <th>651535</th>
+                        <td>Subcontractor Company</td>
+                        <td>jackson.graham@example.com </td>
+                        <td>1 Feb, 2020</td>
+                        <td style="color: #FF4545; font-weight: 700;">Failed</td>
+                        <td>$10,200</td>
+                    </tr>
+                    <tr>
+                        <th>653518</th>
+                        <td>Mortgage Company</td>
+                        <td> felicia.reid@example.com </td>
+                        <td>22 Oct, 2020</td>
+                        <td>Pending</td>
+                        <td>$12,600</td>
+                    </tr>
+                    <tr>
+                        <th>487441</th>
+                        <td>TPA</td>
+                        <td> dolores.chambers@example.com </td>
+                        <td>21 Sep, 2020</td>
+                        <td style="color: #3CDD5F; font-weight: 1000;">Paid</td>
+                        <td>$11,170</td>
+                    </tr>
+                    <tr>
+                        <th>267400</th>
+                        <td>Fire Department</td>
+                        <td> navaeh.simmons@example.com </td>
+                        <td>17 Oct, 2020</td>
+                        <td style="color: #FF4545; font-weight: 700;">Failed</td>
+                        <td>$28,000</td>
+                    </tr>
+                    <tr>
+                        <th>449003</th>
+                        <td>Insurance Carrier</td>
+                        <td> curtis.weaver@example.com </td>
+                        <td>21 Sep, 2020</td>
+                        <td style="color: #3CDD5F; font-weight: 1000;">Paid</td>
+                        <td>$10,000</td>
+                    </tr>
+    
+                </tbody>
+            </table>
+        </div>
+    
+    </div>
+    </div>
 </body>
 
 </html>
