@@ -386,6 +386,11 @@ input[type="radio"] {
     .main-content {
         padding: 16px;
     }
+    .hero-circle {
+        max-width: 320px;
+        height: auto;
+        
+    }
 }
 
 
