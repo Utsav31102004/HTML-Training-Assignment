@@ -4,8 +4,8 @@ body {
 }
 
 .hero-circle {
-    width: 320px;
-    height: 320px;
+    width: 420px;
+    height: 420px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
@@ -14,8 +14,12 @@ body {
 .hero-circle img {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
 }
+/* .login-box{
+    padding-left: 50px; */
+/* } */
 
 @media (min-width: 992px) {
     .hero-circle {
